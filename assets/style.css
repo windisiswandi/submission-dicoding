@@ -1,6 +1,51 @@
+:root {
+    --color-primary: #f45c43;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header, main, footer {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header section */
+header #nav-top {
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-right input {
+    color: #fff;
+    background-color: #17151b;
+    background-image: none;
+    border: 1px solid #23202a;
+    border-radius: 3px;
+    padding: 6px 12px;
+}
+
+header #nav-bottom {
+    padding: 12px 20px;
+    background-color: var(--color-primary);
+}
+
+header #nav-bottom a {
+    margin: 0 10px;
 }
 
