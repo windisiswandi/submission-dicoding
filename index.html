@@ -4,30 +4,264 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anichin</title>
+    <!-- Font Awesome 5.15.4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
     <header>
-      <nav id="nav-top">
-        <div class="nav-right">
-          <a href="#" class="navbar-brand">Donghuaku</a>
-          <input type="text" placeholder="Search..." />
+      <div id="main-header">
+        <div class="left">
+          <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href="#" class="navbar-brand">
+            <!-- <img src="/assets/img/logo.png" alt="logo" height="30"> -->
+            MyDonghua
+          </a>
+          <form action="" method="get">
+            <input type="text" placeholder="Search..." name="search" />
+            <i class="fas fa-times"></i>
+          </form>
         </div>
-        <div class="nav-left">
-          <a href="">Contact Us</a>
-          <span class="dark-mode"></span>
+        <div class="right">
+          <a href="#" class="btn-donate">Donate</a>
+          <div class="themes">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <button></button>
+          </div>
+          <i class="fas fa-search"></i>
         </div>
-      </nav>
-      <nav id="nav-bottom">
-        <a href="#">Home</a>
-        <a href="#">Movie</a>
-        <a href="#">Terbaru</a>
-        <a href="#">Schedule</a>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Movie</a>
+          </li>
+          <li class="dropdown nav-item">
+            <a class="dropdown-toggle">Status</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Ongoing</a></li>
+              <li><a href="#">Completed</a></li>
+              <li><a href="#">Upcoming</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#">Schedule</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div id="content">
+        <article>
+          <section>
+            <h3>Popular Today</h3>
+            <div class="list-content">
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/btth5.webp" alt="btth5">
+                    <span class="eps">Ep 61</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Battle Through The Heavens Season 5</div>
+                </a>
+              </div>
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/soul-land-2.webp" alt="soul-land-2">
+                    <span class="eps">Ep 13</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Soul Land 2</div>
+                </a>
+              </div>
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/lin-qi.webp" alt="lin-qi">
+                    <span class="eps">Ep 62</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Lian Qi Shi Wan</div>
+                </a>
+              </div>
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/perfect-world.webp" alt="perfect-world">
+                    <span class="eps">Ep 127</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Perfect World</div>
+                </a>
+              </div>
+          </section>
+          <section>
+            <h3>Latest Release</h3>
+            <div class="list-content">
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/yishi-duzun.webp" alt="Yishi-Duzun">
+                    <span class="eps">Ep 20</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Yishi Duzun</div>
+                </a>
+              </div>
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/the-great-rule.webp" alt="the-great-rule">
+                    <span class="eps">Ep 13</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">The Great Rule</div>
+                </a>
+              </div>
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/throne-of-seal.webp" alt="throne-of-seal">
+                    <span class="eps">Ep 71</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Throne Of Seal</div>
+                </a>
+              </div>
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/legend-of-xianwu.webp" alt="legend-of-xianwu">
+                    <span class="eps">Ep 26</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Legend Of Xianwu</div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Movie</h3>
+            <div class="list-content">
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/yishi-duzun.webp" alt="Yishi-Duzun">
+                    <span class="eps">Ep 20</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Yishi Duzun</div>
+                </a>
+              </div>
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/the-great-rule.webp" alt="the-great-rule">
+                    <span class="eps">Ep 13</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">The Great Rule</div>
+                </a>
+              </div>
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/throne-of-seal.webp" alt="throne-of-seal">
+                    <span class="eps">Ep 71</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Throne Of Seal</div>
+                </a>
+              </div>
+              <div class="poster">
+                <a href="#">
+                  <div class="cover">
+                    <span class="type">Donghua</span>
+                    <img src="/assets/img/imgContent/legend-of-xianwu.webp" alt="legend-of-xianwu">
+                    <span class="eps">Ep 26</span>
+                    <span class="sub">Sub</span>
+                  </div>
+                  <div class="title">Legend Of Xianwu</div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+      <aside>
+        <div class="profile-author">
+          <h3>Creator</h3>
+          <div class="detail-author">
+            <img src="assets/img/my_picture.jpg" alt="My Picture">
+            <p>Hello Everyone... <br>I'm a full stuck developer. I hope you really enjoy my content. </p>
+            <span class="sosmed">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="genres">
+          <h3>Genres</h3>
+          <div class="list-genres">
+            <table>
+              <tr>
+                <td><a href="#">Action</a></td>
+                <td><a href="#">Fantasy</a></td>
+                <td><a href="#">Sci-Fi</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Advanture</a></td>
+                <td><a href="#">Drama</a></td>
+                <td><a href="#">Comedy</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Martial Arts</a></td>
+                <td><a href="#">Reincarnation</a></td>
+                <td><a href="#">Historical</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Romance</a></td>
+                <td><a href="#">Supernatural</a></td>
+                <td><a href="#">Super Power</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Cultivation</a></td>
+                <td><a href="#">Mysteri</a></td>
+                <td><a href="#">Demons</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </aside>
+    </main>
 
-    <footer></footer>
+    <footer>
+      Copyright &copy; <script>document.write(new Date().getFullYear())</script> MyDonghua. All Rights Reserved
+    </footer>
+
+    <script src="assets/script.js"></script>
   </body>
 </html>
