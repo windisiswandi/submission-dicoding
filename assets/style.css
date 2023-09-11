@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   color: white;
@@ -51,16 +55,16 @@ header #main-header {
 }
 
 header #main-header .navbar-brand {
-  font-family: 'Permanent Marker';
-  font-size: 28px;
+  font-family: 'Permanent Marker', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
 
 #main-header .left .toggle {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-right: 20px;
   cursor: pointer;
 }
@@ -110,6 +114,10 @@ header #main-header .left input:focus {
   outline: none;
 }
 header #main-header .left input::-webkit-input-placeholder {
+  color: white;
+}
+
+header #main-header .left form i.fa-times {
   color: white;
 }
 
@@ -427,9 +435,18 @@ footer {
   color: white;
 }
 
+footer span {
+  font-family: 'Permanent Marker', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
 /* Media Query */
 
 @media screen and (min-width: 500px) {
+  header #main-header .navbar-brand {
+    font-size: 28px;
+  }
+
   main #content article section h3 {
     font-size: 20px;
   }
@@ -441,12 +458,20 @@ footer {
   main #content article section .list-content .poster {
     width: 30%;
   }
+
+  main aside h3 {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   header,
   main {
     max-width: 768px;
+  }
+
+  header #main-header {
+    background-color: black;
   }
 
   #main-header .left .toggle {
@@ -470,12 +495,8 @@ footer {
     display: none;
   }
 
-  header #main-header {
-    background-color: black;
-  }
-
   header #main-header .right .themes {
-    margin: 0 20px;
+    margin-left: 10px;
   }
 
   header .nav-menu {
